@@ -23,6 +23,8 @@ class SettingsController {
 
     const setting = await settingsService.findByUserName(username);
 
+    console.log(setting);
+
     return response.json(setting);
   }
   async update(request: Request, response: Response) {
